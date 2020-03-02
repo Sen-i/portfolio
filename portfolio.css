@@ -130,3 +130,16 @@ nav:hover{
 	width:100%;
 	text-align: center;
 }
+.aboutmecontainer{
+	width:80%;
+	height:500px;
+	display:flex;
+	justify-content:flex-start;
+}
+.aboutmecontainer{
+	
+}
+.contentcontainer{
+	margin-left: 20px;
+}
+
