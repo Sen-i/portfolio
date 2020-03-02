@@ -57,7 +57,7 @@ body{
 		align-items:center;
 		justify-content:flex-start;
 		font-size:1.5rem;
-		color: #27ff1c;
+		color: #ffffff;
 }
 nav{
 		display: flex;
@@ -73,6 +73,10 @@ nav{
 		padding-bottom: 30px;
 		margin: 0px;
 		z-index: 5;
+		background-image: linear-gradient(to top, rgba(0,0,0,0), rgba(0,0,0,1));
+}
+nav:hover{
+	opacity:1;
 }
 
 .home{
@@ -84,6 +88,7 @@ nav{
 .home:hover{
 		border-bottom: 2px solid;
 		border-color: #2bd128;
+		color:#2bd128 ;
 }
 .portfolio{
 		margin-left:15px;
@@ -94,6 +99,7 @@ nav{
 .portfolio:hover{
 	border-bottom: 2px solid;
 	border-color: #2bd128;
+	color:#2bd128 ;
 }
 .about{
 		margin-left:15px;
@@ -104,6 +110,7 @@ nav{
 .about:hover{
 		border-bottom: 2px solid;
 		border-color: #2bd128;
+		color:#2bd128 ;
 }
 .contact{
 		padding: 10px;
@@ -114,4 +121,12 @@ nav{
 .contact:hover{
 		border-bottom: 2px solid;
 		border-color: #2bd128;
+		color:#2bd128 ;
+}
+.introbox{
+	display:flex;
+	align-items:center;
+	justify-content:center;
+	width:100%;
+	text-align: center;
 }
