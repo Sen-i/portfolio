@@ -7,16 +7,7 @@ body{
 	margin: 0;
 	padding: 0;
 }
-.sticky{
-	width:100%;
-	align-items: center;
-	display: flex;
-	position:sticky;
-	top:0;
-	padding:0;
-	margin-bottom:auto;
-	margin: 0px;
-}
+
 a{
 	text-decoration: none;
 	text-decoration-color: #736d6c;
@@ -39,12 +30,108 @@ a{
 		width:100%;
 		justify-content: center;
 		display: flex;
-		position:sticky;
+		position:fixed;
 		top:0;
 		padding:0;
 		margin-bottom:auto;
 		margin: 0px;
+		z-index: 10;
+		background-image: linear-gradient(to top, rgba(0,0,0,0), rgba(0,0,0,1));
+}
+body{
+		z-index: 1;
+		background-image: url(/Users/academy/Documents/Assets/worldlights.jpg);
+		background-repeat: no-repeat;
+		background-size: 100vh;
+		background-size: 100vw;
+		flex-direction:column;
+		background-attachment: fixed;
+		width: 100%;
+		height: 600px;
+		display: flex;
+		align-items:center;
+		justify-content:flex-start;
+		font-size:1.5rem;
+		color: #ffffff;
+}
+nav{
+		display: flex;
+		flex-direction: row;
+		justify-content:flex-end;
+		align-items: center;
+		font-size:1.5rem;
+		background-color: transparent;
+		width: 75%;	
+		margin:0 auto;
+		position:sticky;
+		padding-top: 30px;
+		padding-bottom: 30px;
+		margin: 0px;
 		z-index: 5;
+		background-image: linear-gradient(to top, rgba(0,0,0,0), rgba(0,0,0,1));
+}
+nav:hover{
+	opacity:1;
+}
+
+.home{
+		margin-left:15px;
+		padding: 10px;
+		border-bottom: 2px solid;
+		border-color: transparent;
+	}
+.home:hover{
+		border-bottom: 2px solid;
+		border-color: #2bd128;
+		color:#2bd128 ;
+}
+.portfolio{
+		margin-left:15px;
+		padding: 10px;
+		border-bottom: 2px solid;
+		border-color: transparent;
+}
+.portfolio:hover{
+	border-bottom: 2px solid;
+	border-color: #2bd128;
+	color:#2bd128 ;*{
+	box-sizing:border-box;
+	font-family: "Times New Roman", times, sans-serif;
+}
+body{
+	font-size:62.5%;
+	margin: 0;
+	padding: 0;
+}
+
+a{
+	text-decoration: none;
+	text-decoration-color: #736d6c;
+	color:inherit;
+}
+.navholder{
+	display:flex;
+	align-items:center;
+}	
+@media only screen and (max-width:822px)
+{
+	.navholder{
+		display: flex;
+		flex-direction:column;
+		align-items: center;
+		width: 100vw;
+	}
+}
+.sticky{
+		width:100%;
+		justify-content: center;
+		display: flex;
+		position:fixed;
+		top:0;
+		padding:0;
+		margin-bottom:auto;
+		margin: 0px;
+		z-index: 10;
 		background-image: linear-gradient(to top, rgba(0,0,0,0), rgba(0,0,0,1));
 }
 body{
@@ -130,17 +217,18 @@ nav:hover{
 		color:#2bd128 ;
 }
 .introbox{
+		margin-top:40px;
 		display:flex;
 		align-items:center;
 		justify-content:center;
-		width:70vw;
+		width:70%;
 		text-align: center;
 }
 h2{
 	padding:40px;
 }
 .aboutmecontainer{
-		width:70vw;
+		width:70%;
 		height:500px;
 		display:flex;
 		justify-content:flex-start;
@@ -155,3 +243,75 @@ h2{
 		margin-left: 80px;
 }
 
+
+}
+.about{
+		margin-left:15px;
+		padding: 10px;
+		border-bottom: 2px solid;
+		border-color: transparent;
+		text-align:center;
+}
+.about:hover{
+		border-bottom: 2px solid;
+		border-color: #2bd128;
+		color:#2bd128 ;
+}
+.contact{
+		padding: 10px;
+		margin-left:15px;
+		border-bottom: 2px solid;
+		border-color: transparent;
+		text-align:center;
+}
+.contact:hover{
+		border-bottom: 2px solid;
+		border-color: #2bd128;
+		color:#2bd128 ;
+}
+.introbox{
+		margin-top:40px;
+		display:flex;
+		align-items:center;
+		justify-content:center;
+		width:70%;
+		text-align: center;
+}
+h2{
+	padding:40px;
+}
+.aboutmecontainer{
+		width:70%;
+		height:500px;
+		display:flex;
+		justify-content:flex-start;
+}
+.abmimg{
+		transition: transform .2s;
+}
+.abmimg:hover{
+		transform: scale(1.5);
+}
+.contentcontainer{
+		margin-left: 80px;
+}
+.portcontainer{
+		width:70%;
+		display:flex;
+		justify-content:center;
+}
+.rowcontainer{
+		display:flex;
+		flex-direction:row;
+		flex-basis:20%;
+}
+.columncontainer{
+		display:flex;
+		flex-direction:column;
+		align-items:center;
+}
+.portcontainer{
+		display:flex;
+		flex-direction:column;
+		text-align:center;
+}
