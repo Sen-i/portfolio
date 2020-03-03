@@ -49,8 +49,10 @@ body{
 		z-index: 1;
 		background-image: url(https://www.top10hq.com/wp-content/uploads/2014/01/largest-countries-europe.jpg);
 		background-repeat: no-repeat;
-		background-size: cover;
+		background-size: 100vh;
+		background-size: 100vw;
 		flex-direction:column;
+		background-attachment: fixed;
 		width: 100%;
 		height: 600px;
 		display: flex;
