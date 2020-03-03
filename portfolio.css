@@ -126,22 +126,25 @@ nav:hover{
 		color:#2bd128 ;
 }
 .introbox{
-	display:flex;
-	align-items:center;
-	justify-content:center;
-	width:100%;
-	text-align: center;
+		display:flex;
+		align-items:center;
+		justify-content:center;
+		width:100%;
+		text-align: center;
 }
 .aboutmecontainer{
-	width:80%;
-	height:500px;
-	display:flex;
-	justify-content:flex-start;
+		width:80%;
+		height:500px;
+		display:flex;
+		justify-content:flex-start;
 }
-.aboutmecontainer{
-	
+.abmimg{
+		transition: transform .2s;
+}
+.abmimg:hover{
+		transform: scale(1.5);
 }
 .contentcontainer{
-	margin-left: 20px;
+		margin-left: 80px;
 }
 
