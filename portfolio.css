@@ -1,7 +1,8 @@
 *{
 	box-sizing:border-box;
-	font-family: "Times New Roman", times, sans-serif;
+	font-family: 'Spartan', sans-serif;
 }
+@import url('https://fonts.googleapis.com/css?family=Spartan&display=swap');
 
 a{
 	text-decoration: none;
@@ -12,7 +13,7 @@ a{
 	display:flex;
 	align-items:center;
 }	
-@media only screen and (max-width:822px)
+/*@media only screen and (max-width:850px)
 {
 	.navholder{
 		display: flex;
@@ -20,7 +21,7 @@ a{
 		align-items: center;
 		width: 100%;
 	}
-}
+}*/
 .sticky{
 		width:100%;
 		justify-content: center;
@@ -40,7 +41,6 @@ body{
 		z-index: 1;
 		background-image: url(/Users/academy/Documents/portfolio/Assets/worldlights.jpg);
 		background-repeat: no-repeat;
-		background-position: center center;
 		flex-direction:column;
 		background-attachment: fixed;
 		background-size: cover;
@@ -65,7 +65,7 @@ nav{
 		padding-bottom: 30px;
 		margin: 0px;
 		z-index: 5;
-		background-image: linear-gradient(to top, rgba(0,0,0,0), rgba(0,0,0,1));
+		/*background-image: linear-gradient(to top, rgba(0,0,0,0), rgba(0,0,0,1));*/
 }
 nav:hover{
 	opacity:1;
@@ -80,7 +80,43 @@ nav:hover{
 .home:hover{
 		border-bottom: 2px solid;
 		border-color: #2bd128;
-		color:#2bd128 ;
+}
+@media only screen and (max-width: 850px) {
+    .home{
+        background-image: url(/Users/academy/Documents/portfolio/Assets/home.png);
+		background-size: cover;
+        height: 50px;      
+        width:  50px;
+		padding:0px;
+        color: transparent;
+    }
+	.about{
+		background-image: url(/Users/academy/Documents/portfolio/Assets/aboutme.png);
+		background-size: cover;
+        height: 50px;      
+        width:  50px;
+		padding:0px;
+        color: transparent;
+    }
+	.portfolio{
+		background-image: url(/Users/academy/Documents/portfolio/Assets/portfolio.png);
+		background-size: cover;
+		height: 50px;      
+		width:  50px;
+		padding:0px;
+		color: transparent;
+	}
+	.contact{
+		background-image: url(/Users/academy/Documents/portfolio/Assets/contactme.png);
+		background-size: cover;
+		height: 50px;      
+		width:  50px;
+		padding:0px;
+		color: transparent;
+	}
+	nav{
+		width:100%;
+	}
 }
 .portfolio{
 		margin-left:15px;
@@ -89,11 +125,8 @@ nav:hover{
 		border-color: transparent;
 }
 .portfolio:hover{
-	border-bottom: 2px solid;
-	border-color: #2bd128;
-	color:#2bd128 ;
-	box-sizing:border-box;
-	font-family: "Times New Roman", times, sans-serif;
+		border-bottom: 2px solid;
+		border-color: #2bd128;
 }
 .portfolio{
 		margin-left:15px;
@@ -102,9 +135,8 @@ nav:hover{
 		border-color: transparent;
 }
 .portfolio:hover{
-	border-bottom: 2px solid;
-	border-color: #2bd128;
-	color:#2bd128 ;
+		border-bottom: 2px solid;
+		border-color: #2bd128;
 }
 .about{
 		margin-left:15px;
@@ -116,7 +148,6 @@ nav:hover{
 .about:hover{
 		border-bottom: 2px solid;
 		border-color: #2bd128;
-		color:#2bd128 ;
 }
 .contact{
 		padding: 10px;
@@ -128,15 +159,25 @@ nav:hover{
 .contact:hover{
 		border-bottom: 2px solid;
 		border-color: #2bd128;
-		color:#2bd128 ;
 }
 .introbox{
-		margin-top:40px;
+		margin-top:20px;
 		display:flex;
 		align-items:center;
 		justify-content:center;
 		width:70%;
 		text-align: center;
+}
+@media only screen and (max-width:850px)
+{
+	.introbox{
+		margin-top:20px;
+		display:flex;
+		align-items:center;
+		justify-content:center;
+		width:70%;
+		text-align: center;
+	}
 }
 h2{
 	padding:40px;
@@ -146,23 +187,45 @@ h2{
 		display:flex;
 		justify-content:flex-start;
 }
+@media only screen and (max-width:900px)
+{
+	.aboutmecontainer{
+		width:70%;
+		display:flex;
+		align-items:center;
+	}
+}
+@media only screen and (max-width:700px)
+{
+	.aboutmecontainer{
+		width:70%;
+		display:flex;
+		flex-direction:column;
+	}
+	
+}
+
 .abmimg{
 		transition: transform .2s;
-		border:50%;
+		border-radius:50%;
 }
 .abmimg:hover{
+		transform: scale(1.5);
+}
+.portimg{
+		transition: transform .2s;
+}
+.portimg:hover{
 		transform: scale(1.5);
 }
 .contentcontainer{
 		margin-left: 80px;
 }
-.introbox{
-		margin-top:40px;
-		display:flex;
-		align-items:center;
-		justify-content:center;
-		width:70%;
-		text-align: center;
+@media only screen and (max-width:700px)
+{
+	.contentcontainer{
+			margin-left: 0px;
+		}
 }
 h2{
 	padding:40px;
@@ -171,9 +234,6 @@ h2{
 		width:70%;
 		display:flex;
 		justify-content:flex-start;
-}
-.contentcontainer{
-		margin-left: 80px;
 }
 .portcontainer{
 		width:70%;
@@ -184,6 +244,13 @@ h2{
 		display:flex;
 		flex-direction:row;
 		flex-basis:20%;
+}
+@media only screen and (max-width:1682px)
+{
+	.rowcontainer{
+		display: flex;
+		flex-direction:column;
+	}
 }
 .columncontainer{
 		display:flex;
@@ -215,18 +282,19 @@ h2{
 		align-items:center;
 }
 .social{
-		width:70%;
-		display:flex;
-		justify-content:space-evenly;
 		margin:40px;
 }
 .icon{
 		width:50px;
 		height:50px;
 		position:relative;
+		opacity:0.5;
+}
+.icon:hover{
+		opacity:1;
 }
 .email:hover{
-	background-color:#4917a6;
+	background-image: linear-gradient(to top, rgba(73,23,166,0), rgba(73,23,166,1));
 	padding:5px;
 }
 footer{
