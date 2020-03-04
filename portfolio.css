@@ -179,8 +179,15 @@ nav:hover{
 		text-align: center;
 	}
 }
+h1{
+	margin:70px;
+}
 h2{
-	padding:40px;
+	margin:20px;
+	width:70%;
+	border-bottom: 2px solid;
+	border-color:#2bd128;
+	text-align:center;
 }
 .aboutmecontainer{
 		width:70%;
