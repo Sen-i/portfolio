@@ -10,8 +10,7 @@ a{
 	color:inherit;
 }
 .navholder{
-	display:flex;
-	align-items:center;
+	
 }	
 /*@media only screen and (max-width:850px)
 {
@@ -24,13 +23,10 @@ a{
 }*/
 .sticky{
 		width:100%;
-		justify-content: center;
-		display: flex;
-		position:fixed;
 		top:0;
+		left: 0;
 		padding:0;
-		margin-bottom:auto;
-		margin: 0px;
+		position:fixed;
 		z-index: 10;
 		background-image: linear-gradient(to top, rgba(0,0,0,0), rgba(0,0,0,1));
 }
@@ -39,7 +35,7 @@ body{
 		margin: 0;
 		padding: 0;
 		z-index: 1;
-		background-image: url(/Users/academy/Documents/portfolio/Assets/worldlights.jpg);
+		background-image: url(Assets/worldlights.jpg);
 		background-repeat: no-repeat;
 		flex-direction:column;
 		background-attachment: fixed;
@@ -52,18 +48,12 @@ body{
 		color: #ffffff;
 }
 nav{
-		display: flex;
-		flex-direction: row;
-		justify-content:flex-end;
-		align-items: center;
 		font-size:1.5rem;
 		background-color: transparent;
-		width: 75%;	
+		width: 70%;	
 		margin:0 auto;
-		position:sticky;
 		padding-top: 30px;
 		padding-bottom: 30px;
-		margin: 0px;
 		z-index: 5;
 		/*background-image: linear-gradient(to top, rgba(0,0,0,0), rgba(0,0,0,1));*/
 }
@@ -76,6 +66,7 @@ nav:hover{
 		padding: 10px;
 		border-bottom: 2px solid;
 		border-color: transparent;
+		float:right;
 	}
 .home:hover{
 		border-bottom: 2px solid;
@@ -83,55 +74,51 @@ nav:hover{
 }
 @media only screen and (max-width: 850px) {
 		.home{
-		background-image: url(/Users/academy/Documents/portfolio/Assets/home.png);
+		background-image: url(Assets/home.png);
 		background-size: cover;
 		height: 50px;      
 		width:  50px;
 		padding:0px;
+		float:right;
 		color: transparent;
 		}
 		.about{
-		background-image: url(/Users/academy/Documents/portfolio/Assets/aboutme.png);
+		background-image: url(Assets/aboutme.png);
 		background-size: cover;
 		height: 50px;      
 		width:  50px;
 		padding:0px;
+		float:right;
 		color: transparent;
 		}
 		.portfolio{
-		background-image: url(/Users/academy/Documents/portfolio/Assets/portfolio.png);
+		background-image: url(Assets/portfolio.png);
 		background-size: cover;
 		height: 50px;      
 		width:  50px;
 		padding:0px;
+		float:right;
 		color: transparent;
 		}
 		.contact{
-		background-image: url(/Users/academy/Documents/portfolio/Assets/contactme.png);
-		background-size: cover;
-		height: 50px;      
-		width:  50px;
-		padding:0px;
-		color: transparent;
+			background-image: url(Assets/contactme.png);
+			background-size: cover;
+			height: 50px;      
+			width:  50px;
+			padding:0px;
+			float:right;
+			color: transparent;
 		}
 		nav{
 		width:100%;
 		}
-		}
+	}
+
 .portfolio{
 		margin-left:15px;
 		padding: 10px;
 		border-bottom: 2px solid;
-		border-color: transparent;
-}
-.portfolio:hover{
-		border-bottom: 2px solid;
-		border-color: #2bd128;
-}
-.portfolio{
-		margin-left:15px;
-		padding: 10px;
-		border-bottom: 2px solid;
+		float:right;
 		border-color: transparent;
 }
 .portfolio:hover{
@@ -140,6 +127,7 @@ nav:hover{
 }
 .about{
 		margin-left:15px;
+		float:right;
 		padding: 10px;
 		border-bottom: 2px solid;
 		border-color: transparent;
@@ -151,6 +139,7 @@ nav:hover{
 }
 .contact{
 		padding: 10px;
+		float:right;
 		margin-left:15px;
 		border-bottom: 2px solid;
 		border-color: transparent;
@@ -219,6 +208,8 @@ h2{
 		transform: scale(1.5);
 }
 .portimg{
+		height:160px;
+		width:280px;
 		transition: transform .2s;
 }
 .portimg:hover{
@@ -242,11 +233,11 @@ h2{
 		width:70%;
 		display:flex;
 		justify-content:center;
+		align-items:center;
 }
 .rowcontainer{
 		display:flex;
 		flex-direction:row;
-		flex-basis:20%;
 }
 @media only screen and (max-width:1682px)
 {
@@ -260,7 +251,7 @@ h2{
 		flex-direction:column;
 		align-items:center;
 }
-.portcontainer{
+.portcontainer1{
 		display:flex;
 		flex-direction:column;
 		text-align:center;
@@ -303,4 +294,7 @@ h2{
 footer{
 		width:100%;
 		background-color:#868687;
+}
+.portcomment{
+	padding:40px;
 }
