@@ -4,7 +4,6 @@
 }
 a {
 	text-decoration: none;
-	text-decoration-color: #736d6c;
 	color: inherit;
 }
 .sticky {
@@ -13,7 +12,6 @@ a {
 }
 body {
 	padding: 0;
-	z-index: 1;
 	background-image: url(Assets/worldlights.jpg);
 	background-repeat: no-repeat;
 	flex-direction: column;
@@ -22,20 +20,15 @@ body {
 	background-color: #464646;
 	display: flex;
 	align-items: center;
-	justify-content: flex-start;
 	font-size: 1.5rem;
 	color: #feda4a;
 }
 nav {
 	font-size: 1.5rem;
-	background-color: transparent;
 	width: 70%;
-	margin: 0 auto;
-	padding-top: 30px;
-	padding-bottom: 30px;
-	z-index: 5;
+	margin: 30px auto;
 }
-nav: hover {
+nav:hover {
 	opacity: 1;
 }
 
@@ -46,11 +39,11 @@ nav: hover {
 	border-color: transparent;
 	float: right;
 }
-.home: hover {
+.home:hover {
 	border-bottom: 2px solid;
 	border-color: #2bd128;
 }
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 905px) {
 	.home {
 		background-image: url(Assets/home.png);
 		background-size: cover;
@@ -106,7 +99,7 @@ nav: hover {
 	float: right;
 	border-color: transparent;
 }
-.portfolio: hover {
+.portfolio:hover {
 	border-bottom: 2px solid;
 	border-color: #2bd128;
 }
@@ -118,7 +111,7 @@ nav: hover {
 	border-color: transparent;
 	text-align: center;
 }
-.about: hover {
+.about:hover {
 	border-bottom: 2px solid;
 	border-color: #2bd128;
 }
@@ -130,14 +123,13 @@ nav: hover {
 	border-color: transparent;
 	text-align: center;
 }
-.contact: hover {
+.contact:hover {
 	border-bottom: 2px solid;
 	border-color: #2bd128;
 }
 .introbox {
 	margin-top: 100px;
 	display: flex;
-	align-items: center;
 	justify-content: center;
 	width: 70%;
 	text-align: center;
@@ -152,9 +144,6 @@ nav: hover {
 		width: 70%;
 		text-align: center;
 	}
-}
-h1 {
-	margin: 70px;
 }
 h2 {
 	margin: 200px;
@@ -184,7 +173,7 @@ h2 {
 	transition: transform.2s;
 	border-radius: 50%;
 }
-.abmimg: hover {
+.abmimg:hover {
 	transform: scale(1.5);
 }
 .portimg {
@@ -192,7 +181,7 @@ h2 {
 	width: 280px;
 	transition: transform.2s;
 }
-.portimg: hover {
+.portimg:hover {
 	transform: scale(1.5);
 }
 .contentcontainer {
@@ -258,10 +247,10 @@ h2 {
 	position: relative;
 	opacity: 0.5;
 }
-.icon: hover {
+.icon:hover {
 	opacity: 1;
 }
-.email: hover {
+.email:hover {
 	background-image: linear-gradient(to button,rgba(73,23,166,0),rgba(73,23,166,1));
 	padding: 5px;
 }
