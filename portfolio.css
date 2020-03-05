@@ -89,7 +89,7 @@ nav:hover {
 		display:none;
 	}
 	nav {
-	width: 100%;
+		width: 100%;
 	}
 }
 .portfolio {
@@ -251,7 +251,7 @@ h2 {
 	opacity: 1;
 }
 .email:hover {
-	background-image: linear-gradient(to button,rgba(73,23,166,0),rgba(73,23,166,1));
+	background-color:purple;
 	padding: 5px;
 }
 footer {
