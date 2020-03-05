@@ -1,83 +1,60 @@
 *{
 	box-sizing:border-box;
-	font-family: "Times New Roman", times, sans-serif;
+	font-family: 'Nanum Gothic', sans-serif;
 }
-body{
-	font-size:62.5%;
-	margin: 0;
-	padding: 0;
-}
-.sticky{
-	width:100%;
-	align-items: center;
-	display: flex;
-	position:sticky;
-	top:0;
-	padding:0;
-	margin-bottom:auto;
-	margin: 0px;
-}
+@import url('https://fonts.googleapis.com/css?family=Nanum+Gothic&display=swap');
+
 a{
 	text-decoration: none;
 	text-decoration-color: #736d6c;
 	color:inherit;
 }
 .navholder{
-	display:flex;
-	align-items:center;
+	
 }	
-@media only screen and (max-width:822px)
+/*@media only screen and (max-width:850px)
 {
 	.navholder{
 		display: flex;
 		flex-direction:column;
 		align-items: center;
-		width: 100vw;
+		width: 100%;
 	}
-}
+}*/
 .sticky{
 		width:100%;
-		justify-content: center;
-		display: flex;
-		position:sticky;
 		top:0;
+		left: 0;
 		padding:0;
-		margin-bottom:auto;
-		margin: 0px;
-		z-index: 5;
+		position:fixed;
+		z-index: 10;
 		background-image: linear-gradient(to top, rgba(0,0,0,0), rgba(0,0,0,1));
 }
 body{
+
+		padding: 0;
 		z-index: 1;
-		background-image: url(/Users/academy/Documents/Assets/worldlights.jpg);
+		background-image: url(Assets/worldlights.jpg);
 		background-repeat: no-repeat;
-		background-size: 100vh;
-		background-size: 100vw;
 		flex-direction:column;
 		background-attachment: fixed;
-		width: 100%;
-		height: 600px;
+		background-size: cover;
+		background-color:#464646;
 		display: flex;
 		align-items:center;
 		justify-content:flex-start;
 		font-size:1.5rem;
-		color: #ffffff;
+		color: #feda4a;
 }
 nav{
-		display: flex;
-		flex-direction: row;
-		justify-content:flex-end;
-		align-items: center;
 		font-size:1.5rem;
 		background-color: transparent;
-		width: 75%;	
+		width: 70%;	
 		margin:0 auto;
-		position:sticky;
 		padding-top: 30px;
 		padding-bottom: 30px;
-		margin: 0px;
 		z-index: 5;
-		background-image: linear-gradient(to top, rgba(0,0,0,0), rgba(0,0,0,1));
+		/*background-image: linear-gradient(to top, rgba(0,0,0,0), rgba(0,0,0,1));*/
 }
 nav:hover{
 	opacity:1;
@@ -88,25 +65,68 @@ nav:hover{
 		padding: 10px;
 		border-bottom: 2px solid;
 		border-color: transparent;
+		float:right;
 	}
 .home:hover{
 		border-bottom: 2px solid;
 		border-color: #2bd128;
-		color:#2bd128 ;
 }
+@media only screen and (max-width: 850px) {
+		.home{
+		background-image: url(Assets/home.png);
+		background-size: cover;
+		height: 50px;      
+		width:  50px;
+		padding:0px;
+		float:right;
+		color: transparent;
+		}
+		.about{
+		background-image: url(Assets/aboutme.png);
+		background-size: cover;
+		height: 50px;      
+		width:  50px;
+		padding:0px;
+		float:right;
+		color: transparent;
+		}
+		.portfolio{
+		background-image: url(Assets/portfolio.png);
+		background-size: cover;
+		height: 50px;      
+		width:  50px;
+		padding:0px;
+		float:right;
+		color: transparent;
+		}
+		.contact{
+			background-image: url(Assets/contactme.png);
+			background-size: cover;
+			height: 50px;      
+			width:  50px;
+			padding:0px;
+			float:right;
+			color: transparent;
+		}
+		nav{
+		width:100%;
+		}
+	}
+
 .portfolio{
 		margin-left:15px;
 		padding: 10px;
 		border-bottom: 2px solid;
+		float:right;
 		border-color: transparent;
 }
 .portfolio:hover{
-	border-bottom: 2px solid;
-	border-color: #2bd128;
-	color:#2bd128 ;
+		border-bottom: 2px solid;
+		border-color: #2bd128;
 }
 .about{
 		margin-left:15px;
+		float:right;
 		padding: 10px;
 		border-bottom: 2px solid;
 		border-color: transparent;
@@ -115,10 +135,10 @@ nav:hover{
 .about:hover{
 		border-bottom: 2px solid;
 		border-color: #2bd128;
-		color:#2bd128 ;
 }
 .contact{
 		padding: 10px;
+		float:right;
 		margin-left:15px;
 		border-bottom: 2px solid;
 		border-color: transparent;
@@ -127,31 +147,143 @@ nav:hover{
 .contact:hover{
 		border-bottom: 2px solid;
 		border-color: #2bd128;
-		color:#2bd128 ;
 }
 .introbox{
+		margin-top:300px;
 		display:flex;
 		align-items:center;
 		justify-content:center;
-		width:70vw;
+		width:70%;
 		text-align: center;
 }
-h2{
-	padding:40px;
-}
-.aboutmecontainer{
-		width:70vw;
-		height:500px;
+@media only screen and (max-width:850px)
+{
+	.introbox{
+		margin-top:20px;
 		display:flex;
-		justify-content:flex-start;
+		align-items:center;
+		justify-content:center;
+		width:70%;
+		text-align: center;
+	}
+}
+h1{
+		margin:70px;
+}
+h2{
+		margin:200px;
+		width:70%;
+		border-bottom: 2px solid;
+		border-color:#2bd128;
+		text-align:center;
+}
+
+@media only screen and (max-width:900px)
+{
+	.aboutmecontainer{
+		width:70%;
+		display:flex;
+		align-items:center;
+	}
+}
+@media only screen and (max-width:700px)
+{
+	.aboutmecontainer{
+		width:70%;
+		display:flex;
+		flex-direction:column;
+	}
+	
 }
 .abmimg{
 		transition: transform .2s;
+		border-radius:50%;
 }
 .abmimg:hover{
+		transform: scale(1.5);
+}
+.portimg{
+		height:160px;
+		width:280px;
+		transition: transform .2s;
+}
+.portimg:hover{
 		transform: scale(1.5);
 }
 .contentcontainer{
 		margin-left: 80px;
 }
-
+@media only screen and (max-width:700px)
+{
+	.contentcontainer{
+			margin-left: 0px;
+		}
+}
+.portcontainer{
+		width:70%;
+		display:flex;
+		justify-content:center;
+		align-items:center;
+}
+.rowcontainer{
+		float:center;
+}
+@media only screen and (max-width:1682px)
+{
+	.rowcontainer{
+		display: flex;
+		flex-direction:column;
+	}
+}
+.columncontainer{
+		display:flex;
+		flex-direction:column;
+		align-items:center;
+}
+.portcontainer1{
+		display:flex;
+		flex-direction:column;
+		text-align:center;
+}
+.porttitle{
+		margin-top:40px;
+}
+.contactme{
+		width:70%;
+		display:flex;
+		justify-content:center;
+		text-align:center;
+}
+.aboutmecontainer{
+		width:70%;
+		display:flex;
+		justify-content:center;
+		text-align:center;
+}
+.contactme{
+		flex-direction:column;
+		align-items:center;
+}
+.social{
+		margin:40px;
+}
+.icon{
+		width:50px;
+		height:50px;
+		position:relative;
+		opacity:0.5;
+}
+.icon:hover{
+		opacity:1;
+}
+.email:hover{
+		background-image: linear-gradient(to top, rgba(73,23,166,0), rgba(73,23,166,1));
+		padding:5px;
+}
+footer{
+		width:100%;
+		background-color:#868687;
+}
+.portcomment{
+	padding:40px;
+}
