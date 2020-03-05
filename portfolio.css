@@ -2,6 +2,9 @@
 	box-sizing: border-box;
 	font-family: 'Nanum Gothic',sans-serif;
 }
+html {
+	font-size: 62.75%;
+}
 a {
 	text-decoration: none;
 	color: inherit;
@@ -20,11 +23,11 @@ body {
 	background-color: #464646;
 	display: flex;
 	align-items: center;
-	font-size: 1.5rem;
+	font-size: 3rem;
 	color: #feda4a;
 }
 nav {
-	font-size: 1.5rem;
+	font-size: 2.25rem;
 	width: 70%;
 	margin: 30px auto;
 }
@@ -47,6 +50,8 @@ nav:hover {
 	.home {
 		background-image: url(Assets/home.png);
 		background-size: cover;
+	}
+	.navbutton {
 		height: 50px;
 		width: 50px;
 		padding: 0px;
@@ -58,10 +63,6 @@ nav:hover {
 	.about {
 		background-image: url(Assets/aboutme.png);
 		background-size: cover;
-		height: 50px;
-		width: 50px;
-		padding: 0px;
-		float: right;
 	}
 	.abouticon {
 		display:none;
@@ -69,10 +70,6 @@ nav:hover {
 	.portfolio {
 		background-image: url(Assets/portfolio.png);
 		background-size: cover;
-		height: 50px;
-		width: 50px;
-		padding: 0px;
-		float: right;
 	}
 	.portfolioicon{
 		display:none;
@@ -80,10 +77,6 @@ nav:hover {
 	.contact {
 		background-image: url(Assets/contactme.png);
 		background-size: cover;
-		height: 50px;
-		width: 50px;
-		padding: 0px;
-		float: right;
 	}
 	.contacticon{
 		display:none;
