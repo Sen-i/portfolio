@@ -19,7 +19,7 @@ a {
 
 body {
 	padding: 0;
-	background-image: url(Assets/worldlights.jpg);
+	background-image: url(../Assets/worldlights.jpg);
 	background-repeat: no-repeat;
 	flex-direction: column;
 	background-attachment: fixed;
@@ -56,7 +56,7 @@ nav:hover {
 
 @media only screen and (max-width: 905px) {
 	.home {
-		background-image: url(Assets/home.png);
+		background-image: url(../Assets/home.png);
 		background-size: cover;
 	}
 	
@@ -72,7 +72,7 @@ nav:hover {
 	}
 	
 	.about {
-		background-image: url(Assets/aboutme.png);
+		background-image: url(../Assets/aboutme.png);
 		background-size: cover;
 	}
 	
@@ -81,7 +81,7 @@ nav:hover {
 	}
 	
 	.portfolio {
-		background-image: url(Assets/portfolio.png);
+		background-image: url(../Assets/portfolio.png);
 		background-size: cover;
 	}
 	
@@ -90,7 +90,7 @@ nav:hover {
 	}
 	
 	.contact {
-		background-image: url(Assets/contactme.png);
+		background-image: url(../Assets/contactme.png);
 		background-size: cover;
 	}
 	
