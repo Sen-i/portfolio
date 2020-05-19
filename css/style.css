@@ -38,3 +38,7 @@ h2 {
 #home {
     display: flex;
 }
+
+#contactMe {
+    display: none;
+}
