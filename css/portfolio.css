@@ -1,310 +1,310 @@
 * {
-	box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 html {
-	font-size: 62.75%;
-		font-family: 'Nanum Gothic',sans-serif;
+    font-size: 62.75%;
+        font-family: 'Nanum Gothic',sans-serif;
 }
 
 a {
-	text-decoration: none;
-	color: inherit;
+    text-decoration: none;
+    color: inherit;
 }
 
 .navbarcontanier {
-	width: 100%;
-	background-color: #000000;
+    width: 100%;
+    background-color: #000000;
 }
 
 body {
-	padding: 0;
-	background-image: url(../Assets/worldlights.jpg);
-	background-repeat: no-repeat;
-	flex-direction: column;
-	background-attachment: fixed;
-	background-size: cover;
-	background-color: #464646;
-	display: flex;
-	align-items: center;
-	font-size: 3rem;
-	color: #feda4a;
+    padding: 0;
+    background-image: url(../Assets/worldlights.jpg);
+    background-repeat: no-repeat;
+    flex-direction: column;
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: #464646;
+    display: flex;
+    align-items: center;
+    font-size: 3rem;
+    color: #feda4a;
 }
 
 nav {
-	font-size: 2.25rem;
-	width: 70%;
-	margin: 30px auto;
+    font-size: 2.25rem;
+    width: 70%;
+    margin: 30px auto;
 }
 
 nav:hover {
-	opacity: 1;
+    opacity: 1;
 }
 
 .home {
-	margin-left: 15px;
-	padding: 10px;
-	border-bottom: 2px solid;
-	border-color: transparent;
-	float: right;
+    margin-left: 15px;
+    padding: 10px;
+    border-bottom: 2px solid;
+    border-color: transparent;
+    float: right;
 }
 
 .home:hover {
-	border-bottom: 2px solid;
-	border-color: #2bd128;
+    border-bottom: 2px solid;
+    border-color: #2bd128;
 }
 
 @media only screen and (max-width: 905px) {
-	.home {
-		background-image: url(../Assets/home.png);
-		background-size: cover;
-	}
-	
-	.navbutton {
-		height: 50px;
-		width: 50px;
-		padding: 0;
-		float: right;
-	}
-	
-	.homeicon {
-		display: none;
-	}
-	
-	.about {
-		background-image: url(../Assets/aboutme.png);
-		background-size: cover;
-	}
-	
-	.abouticon {
-		display: none;
-	}
-	
-	.portfolio {
-		background-image: url(../Assets/portfolio.png);
-		background-size: cover;
-	}
-	
-	.portfolioicon{
-		display: none;
-	}
-	
-	.contact {
-		background-image: url(../Assets/contactme.png);
-		background-size: cover;
-	}
-	
-	.contacticon{
-		display: none;
-	}
-	
-	nav {
-		width: 100%;
-	}
-	
+    .home {
+        background-image: url(../Assets/home.png);
+        background-size: cover;
+    }
+    
+    .navbutton {
+        height: 50px;
+        width: 50px;
+        padding: 0;
+        float: right;
+    }
+    
+    .homeicon {
+        display: none;
+    }
+    
+    .about {
+        background-image: url(../Assets/aboutme.png);
+        background-size: cover;
+    }
+    
+    .abouticon {
+        display: none;
+    }
+    
+    .portfolio {
+        background-image: url(../Assets/portfolio.png);
+        background-size: cover;
+    }
+    
+    .portfolioicon{
+        display: none;
+    }
+    
+    .contact {
+        background-image: url(../Assets/contactme.png);
+        background-size: cover;
+    }
+    
+    .contacticon{
+        display: none;
+    }
+    
+    nav {
+        width: 100%;
+    }
+    
 }
 
 .portfolio {
-	margin-left: 15px;
-	padding: 10px;
-	border-bottom: 2px solid;
-	float: right;
-	border-color: transparent;
+    margin-left: 15px;
+    padding: 10px;
+    border-bottom: 2px solid;
+    float: right;
+    border-color: transparent;
 }
 
 .portfolio:hover {
-	border-bottom: 2px solid;
-	border-color: #2bd128;
+    border-bottom: 2px solid;
+    border-color: #2bd128;
 }
 
 .about {
-	margin-left: 15px;
-	float: right;
-	padding: 10px;
-	border-bottom: 2px solid;
-	border-color: transparent;
-	text-align: center;
+    margin-left: 15px;
+    float: right;
+    padding: 10px;
+    border-bottom: 2px solid;
+    border-color: transparent;
+    text-align: center;
 }
 
 .about:hover {
-	border-bottom: 2px solid;
-	border-color: #2bd128;
+    border-bottom: 2px solid;
+    border-color: #2bd128;
 }
 
 .contact {
-	padding: 10px;
-	float: right;
-	margin-left: 15px;
-	border-bottom: 2px solid;
-	border-color: transparent;
-	text-align: center;
+    padding: 10px;
+    float: right;
+    margin-left: 15px;
+    border-bottom: 2px solid;
+    border-color: transparent;
+    text-align: center;
 }
 
 .contact:hover {
-	border-bottom: 2px solid;
-	border-color: #2bd128;
+    border-bottom: 2px solid;
+    border-color: #2bd128;
 }
 
 .introbox {
-	margin-top: 100px;
-	display: flex;
-	justify-content: center;
-	width: 70%;
-	text-align: center;
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    width: 70%;
+    text-align: center;
 }
 
 @media only screen and (max-width: 850px)
  {
-	.introbox {
-		margin-top: 20px;
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		width: 70%;
-		text-align: center;
-	}
-	
+    .introbox {
+        margin-top: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 70%;
+        text-align: center;
+    }
+    
 }
 
 h2 {
-	margin: 200px;
-	width: 70%;
-	border-bottom: 2px solid;
-	border-color: #2bd128;
-	text-align: center;
+    margin: 200px;
+    width: 70%;
+    border-bottom: 2px solid;
+    border-color: #2bd128;
+    text-align: center;
 }
 
 @media only screen and (max-width: 900px)
  {
-	.aboutmecontainer {
-		width: 70%;
-		display: flex;
-		align-items: center;
-	}
-	
+    .aboutmecontainer {
+        width: 70%;
+        display: flex;
+        align-items: center;
+    }
+    
 }
 
 @media only screen and (max-width: 700px)
  {
-	.aboutmecontainer {
-		width: 70%;
-		display: flex;
-		flex-direction: column;
-	}
-	
+    .aboutmecontainer {
+        width: 70%;
+        display: flex;
+        flex-direction: column;
+    }
+    
 }
 .abmimg {
-	transition: transform .2s;
-	border-radius: 50%;
+    transition: transform .2s;
+    border-radius: 50%;
 }
 
 .abmimg:hover {
-	transform: scale(1.5);
+    transform: scale(1.5);
 }
 
 .portimg {
-	height: 160px;
-	width: 280px;
-	transition: transform .2s;
+    height: 160px;
+    width: 280px;
+    transition: transform .2s;
 }
 
 .portimg:hover {
-	transform: scale(1.5);
+    transform: scale(1.5);
 }
 
 .contentcontainer {
-	margin-left: 80px;
+    margin-left: 80px;
 }
 
 @media only screen and (max-width: 700px)
  {
-	.contentcontainer {
-		margin-left: 0;
-	}
-	
+    .contentcontainer {
+        margin-left: 0;
+    }
+    
 }
 
 .portcontainer {
-	width: 70%;
-	display: flex;
-	justify-content: center;
-	align-items: center;
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .rowcontainer {
-	float: center;
+    float: center;
 }
 
 @media only screen and (max-width: 1682px)
  {
-	.rowcontainer {
-		display: flex;
-		flex-direction: column;
-	}
-	
+    .rowcontainer {
+        display: flex;
+        flex-direction: column;
+    }
+    
 }
 
 .columncontainer {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .portcontainer1 {
-	display: flex;
-	flex-direction: column;
-	text-align: center;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
 }
 
 .porttitle {
-	margin-top: 40px;
+    margin-top: 40px;
 }
 
 .contactme {
-	width: 70%;
-	display: flex;
-	justify-content: center;
-	text-align: center;
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
 }
 
 .aboutmecontainer {
-	width: 70%;
-	display: flex;
-	justify-content: center;
-	text-align: center;
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
 }
 
 .contactme {
-	flex-direction: column;
-	align-items: center;
+    flex-direction: column;
+    align-items: center;
 }
 
 .social {
-	margin: 40px;
+    margin: 40px;
 }
 
 .icon {
-	width: 50px;
-	height: 50px;
-	position: relative;
-	opacity: 0.5;
+    width: 50px;
+    height: 50px;
+    position: relative;
+    opacity: 0.5;
 }
 
 .icon:hover {
-	opacity: 1;
+    opacity: 1;
 }
 
 .email:hover {
-	background-color: #b300ff;
-	padding: 5px;
+    background-color: #b300ff;
+    padding: 5px;
 }
 
 footer {
-	width: 100%;
-	padding-left:25%;
-	background-color: #868687;
+    width: 100%;
+    padding-left:25%;
+    background-color: #868687;
 }
 
 .portcomment {
-	padding: 40px;
+    padding: 40px;
 }
