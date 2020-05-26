@@ -2,7 +2,7 @@ body {
     margin: 0;
     padding: 0;
     font-size: 62.5%;
-    font-family: "spartan", fantasy;
+    font-family: "Trebuchet MS", sans-serif ;
     background-color: #ff9e1b;
     height: 100vh;
 }
@@ -97,15 +97,12 @@ body {
 
 @media only screen and (max-width: 905px) {
     .card {
-        background-color: #ff8c00;
+        width: 100%;
     }
 
     .cardcontanier {
-        flex-direction: column;
-        overflow: scroll;
+        display: block!important;
+        overflow: auto;
     }
 
-    .container {
-
-    }
 }

@@ -32,14 +32,14 @@
                 <h3>Welcome to my world!</h3>
             </div>
             <div>
-                <p>This is my world created with html and css.</p>
+                <p>This is my world created with Html, Css and Javascript.</p>
             </div>
         </div>
         <div class = "container justify-content-start flex-column text-center" id = "aboutMe">
             <div class="header"><h2>ABOUT ME</h2></div>
             <div class="aboutmecontainer d-flex flex-row">
                 <div class="imgcontainer col-4">
-                    <img class ="abmimg " src="Assets/panda.jpg" alt="A picture of the creator">
+                    <img class ="abmimg " src="Assets/ME.jpg" alt="A picture of the creator">
                 </div>
                 <div class="contentcontainer d-flex col-8 align-items-center justify-content-center">
                     <div>
@@ -62,28 +62,34 @@
                             </a>
                         </div>
                         <div class="card-body portcontainer1">
-                            <h3 class="card-title porttitle">Placeholder</h3>
-                            <p class="card-text portcomment">Brief Description of Placeholder</p>
+                            <h3 class="card-title porttitle">Numbers Game</h3>
+                            <p class="card-text portcomment">A game made from scratch with Javascript</p>
                         </div>
                     </div>
                     <div class="card columncontainer">
                         <div class="imgcontainer">
+                            <a href="https://github.com/Mayden-Academy/2020-feb-propertyListing">
                             <img class ="card-img-top portimg " src="Assets/PropertyListing.png"
                                  alt="project screenshot">
+                            </a>
                         </div>
                         <div class="card-body portcontainer1">
-                            <h3 class="card-title porttitle">Placeholder</h3>
-                            <p class="card-text portcomment">Brief Description of Placeholder</p>
+                            <h3 class="card-title porttitle">Property Listing</h3>
+                            <p class="card-text portcomment">A Property listing created
+                                using PHP, HTML, CSS and importing data from SQL</p>
                         </div>
                     </div>
                     <div class="card columncontainer">
                         <div class="imgcontainer">
+                            <a href="https://github.com/Mayden-Academy/aptitude-test">
                             <img class ="card-img-top portimg " src="Assets/AptitudeAdminPage.png"
                                  alt="project screenshot">
+                            </a>
                         </div>
                         <div class="card-body portcontainer1">
-                            <h3 class="card-title porttitle">Placeholder</h3>
-                            <p class="card-text portcomment">Brief Description of Placeholder</p>
+                            <h3 class="card-title porttitle">Aptitude Test</h3>
+                            <p class="card-text portcomment">Worked on legacy code to add new features and fix bugs
+                            using Npm, Babel, SASS and Javascript</p>
                         </div>
                     </div>
             </div>
