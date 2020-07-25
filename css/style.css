@@ -7,6 +7,10 @@ body {
     height: 100vh;
 }
 
+#logo:hover {
+    cursor: pointer;
+}
+
 .navbar {
     background-color: #1e52eb;
     color: #fff;

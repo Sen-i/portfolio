@@ -1,15 +1,12 @@
-function hideScreen(cssTag)
-{
+function hideScreen(cssTag) {
     document.querySelector(cssTag).style.display = 'none';
 }
 
-function makeScreenFlex(cssTag)
-{
+function makeScreenFlex(cssTag) {
     document.querySelector(cssTag).style.display = 'flex';
 }
 
-function showHome()
-{
+function showHome() {
 
     hideScreen('#aboutMe');
     hideScreen('#portfolio');
@@ -18,8 +15,7 @@ function showHome()
 
 }
 
-function showAboutMe()
-{
+function showAboutMe() {
 
     makeScreenFlex('#aboutMe');
     hideScreen('#portfolio');
@@ -28,8 +24,7 @@ function showAboutMe()
 
 }
 
-function showPortfolio()
-{
+function showPortfolio() {
 
     hideScreen('#aboutMe');
     makeScreenFlex('#portfolio');
@@ -38,8 +33,7 @@ function showPortfolio()
 
 }
 
-function showContactMe()
-{
+function showContactMe() {
 
     hideScreen('#aboutMe');
     makeScreenFlex('#contactMe');
@@ -48,8 +42,8 @@ function showContactMe()
 
 }
 
-
 document.querySelector('#homebtn').addEventListener('click', showHome);
+document.querySelector('#logo').addEventListener('click', showHome);
 document.querySelector('#aboutmebtn').addEventListener('click', showAboutMe);
 document.querySelector('#portfoliobtn').addEventListener('click', showPortfolio);
 document.querySelector('#contactMebtn').addEventListener('click', showContactMe);
